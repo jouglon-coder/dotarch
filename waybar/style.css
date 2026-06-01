@@ -1,0 +1,55 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", "Font Awesome 6 Free", "Noto Color Emoji", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px; /*border-radius = радиус закругления*/
+    color: rgba(40, 100, 140, 1);
+}
+
+window#waybar {
+    background: rgba(150, 150, 150, 0);
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#workspaces {
+    background: rgba(0, 0, 0, 0);
+    margin: 4px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
+}
+
+#workspaces button {
+    background: rgba(250, 244, 237, 0.6);
+    margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
+}
+
+#workspaces button.active {
+    background: rgba(250, 244, 237, 0.7);
+    margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
+}
+
+#clock,
+#language,
+#pulseaudio,
+#backlight,
+#upower,
+#network,
+#tray {
+    background: rgba(250, 244, 237, 0.7);
+    margin: 4px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
+}
+
+#battery.charging {
+    color: rgba(40, 140, 160, 1);
+}
+
+#battery.warning {
+    color: rgba(230, 140, 20, 1);
+}
+
+#battery.critical {
+    color: rgba(230, 50, 20, 1);
+}

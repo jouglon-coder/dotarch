@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "hyprland/language",
+    "pulseaudio",
+    "backlight",
+    "upower",
+    "network",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "10": "Telegram"
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M  %d.%m.%y}"
+  },
+  "hyprland/language": {
+    "format": " {}",
+    "format-en": "US",
+    "format-ru": "RU"
+  },
+  "pulseaudio": {
+    "format": " {volume}"
+  },
+  "backlight": {
+    "format": "󰃠 {percent}"
+  },
+  "upower": {
+    "icon-size": 20,
+    "hide-if-empty": true,
+    "tooltip": true,
+    "tooltip-spacing": 20
+  },
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": " "
+  },
+  "tray": {
+    "spacing": 10
+  }
+}

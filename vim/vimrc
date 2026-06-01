@@ -1,0 +1,20 @@
+" Highlight the current line
+set cursorline
+
+" Show line numbers
+set number
+set relativenumber
+
+" Turn on syntax highlighting
+syntax on
+
+" Tab 4
+set tabstop=4 " show tab as 4 spaces
+set shiftwidth=4 " auto for >> << == and newLine
+set expandtab " insert 4 spaces instead of tab
+set smarttab
+
+" Binds
+imap ii <Esc>
+vnoremap <leader>y :w !wl-copy<CR><CR>
+nnoremap <leader>Y :w !wl-copy<CR><CR>

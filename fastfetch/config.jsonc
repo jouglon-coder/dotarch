@@ -1,0 +1,16 @@
+{
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "terminal",
+    "shell",
+    "de",
+    "wm",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk"
+  ]
+}

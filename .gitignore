@@ -1,0 +1,7 @@
+# backup files
+*.back
+*.bak
+*~
+
+# vim
+*.swp
