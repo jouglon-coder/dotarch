@@ -9,9 +9,9 @@ set relativenumber
 syntax on
 
 " Tab 4
-set tabstop=4 " show tab as 4 spaces
+set tabstop=4    " show tab as 4 spaces
 set shiftwidth=4 " auto for >> << == and newLine
-set expandtab " insert 4 spaces instead of tab
+set expandtab    " insert 4 spaces instead of tab
 set smarttab
 
 " Binds

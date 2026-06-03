@@ -14,19 +14,21 @@ window#waybar {
 
 #workspaces {
     background: rgba(0, 0, 0, 0);
-    margin: 4px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
     padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
 }
 
 #workspaces button {
     background: rgba(250, 244, 237, 0.6);
     margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    margin-top: 4px;
     padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
 }
 
 #workspaces button.active {
     background: rgba(250, 244, 237, 0.7);
     margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    margin-top: 4px;
     padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
 }
 
@@ -34,22 +36,11 @@ window#waybar {
 #language,
 #pulseaudio,
 #backlight,
-#upower,
+#battery,
 #network,
 #tray {
     background: rgba(250, 244, 237, 0.7);
-    margin: 4px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    margin: 0px 4px; /*margin = внешний отступ низ/верх лево/право*/
+    margin-top: 4px;
     padding: 0px 8px; /*padding = внутренний отступ низ/верх лево/право*/
-}
-
-#battery.charging {
-    color: rgba(40, 140, 160, 1);
-}
-
-#battery.warning {
-    color: rgba(230, 140, 20, 1);
-}
-
-#battery.critical {
-    color: rgba(230, 50, 20, 1);
 }

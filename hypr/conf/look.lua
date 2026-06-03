@@ -6,10 +6,10 @@ hl.config({
     general = {
         gaps_in  = 4,
         gaps_out = 8,
-        border_size = 2,
+        border_size = 4,
         col = {
-            active_border = "rgba(a05028ff)",
-            inactive_border = "rgba(a0502888)",
+            active_border = "rgba(8855ffff)",
+            inactive_border = "rgba(8855ee88)",
         },
         resize_on_border = false,
         allow_tearing = false,

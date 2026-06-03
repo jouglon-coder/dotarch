@@ -12,7 +12,7 @@
     "hyprland/language",
     "pulseaudio",
     "backlight",
-    "upower",
+    "battery",
     "network",
     "tray"
   ],
@@ -23,7 +23,10 @@
     }
   },
   "clock": {
-    "format": "{:%H:%M  %d.%m.%y}"
+    "format": "{:%H:%M}",
+    "interval": 60,
+    "tooltip": true,
+    "tooltip-format": "{:%d.%m.%Y}"
   },
   "hyprland/language": {
     "format": " {}",
@@ -34,13 +37,27 @@
     "format": " {volume}"
   },
   "backlight": {
-    "format": "󰃠 {percent}"
+    "format": "{icon} {percent}",
+    "format-icons": [
+      "󰃚",
+      "󰃛",
+      "󰃜",
+      "󰃝",
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ]
   },
-  "upower": {
-    "icon-size": 20,
-    "hide-if-empty": true,
-    "tooltip": true,
-    "tooltip-spacing": 20
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "interval": 60
   },
   "network": {
     "format-wifi": " ",

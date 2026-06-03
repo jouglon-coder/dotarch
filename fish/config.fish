@@ -1,4 +1,5 @@
-function fish_greeting
+﻿function fish_greeting
+    fastfetch
 end
 
 # alias
@@ -8,19 +9,18 @@ alias ls 'eza -l --color=always --group-directories-first --icons'
 alias lsa 'eza -la --color=always --group-directories-first --icons'
 
 # abbr config
-abbr cfgfastfetch 'vim ~/git/dotfiles/fastfetch/config.jsonc'
-abbr cfgfish 'vim ~/git/dotfiles/fish/config.fish'
-abbr cfgkitty 'vim ~/git/dotfiles/kitty/kitty.conf'
-abbr cfgvim 'vim ~/git/dotfiles/vim/vimrc'
+abbr cfgfastfetch   'vim ~/git/dotarch/fastfetch/config.jsonc'
+abbr cfgfish        'vim ~/git/dotarch/fish/config.fish'
+# abbr cfgkitty       'vim ~/git/dotarch/kitty/kitty.conf'
+abbr cfgalacritty   'vim ~/git/dotarch/alacritty/alacritty.toml'
+abbr cfgkitty       'vim ~/git/github/hypr-dotfiles/kitty/kitty.conf'
+abbr cfgvim         'vim ~/git/dotarch/vim/vimrc'
 
-abbr cfghypr 'vim ~/.config/hypr/hyprland.lua'
-abbr cfghyprbind 'vim ~/.config/hypr/conf/bind.lua'
-abbr cfghyprinput 'vim ~/.config/hypr/conf/input.lua'
-abbr cfghyprlook 'vim ~/.config/hypr/conf/look.lua'
-abbr cfghyprwindows 'vim ~/.config/hypr/conf/windows.lua'
+abbr cfghypr        'vim ~/git/dotarch/hypr/hyprland.lua'
+abbr cfghyprbind    'vim ~/git/dotarch/hypr/conf/bind.lua'
+abbr cfghyprinput   'vim ~/git/dotarch/hypr/conf/input.lua'
+abbr cfghyprlook    'vim ~/git/dotarch/hypr/conf/look.lua'
+abbr cfghyprwindows 'vim ~/git/dotarch/hypr/conf/windows.lua'
 
-abbr cfgwaybarc 'vim ~/git/dotfiles/waybar/config.jsonc'
-abbr cfgwaybars 'vim ~/git/dotfiles/waybar/style.css'
-
-abbr gitstat 'cd ~/git/gitscripts/ && ./git-check-and-push.sh && cd'
-abbr gitpull 'cd ~/git/gitscripts/ && ./script-git-pull.sh && cd'
+abbr cfgwaybarc     'vim ~/git/dotarch/waybar/config.jsonc'
+abbr cfgwaybars     'vim ~/git/dotarch/waybar/style.css'
