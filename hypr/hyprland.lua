@@ -13,8 +13,8 @@ hl.monitor({
     mirror = "eDP-1",
 })
 
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XCURSOR_SIZE", "12")
+hl.env("HYPRCURSOR_SIZE", "12")
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar & hyprpaper & udiskie")
