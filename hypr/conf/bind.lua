@@ -10,6 +10,7 @@ local briDown  = "XF86MonBrightnessdown"
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("alacritty"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("hyprlauncher"))
+-- hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("wofi --show drun"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 

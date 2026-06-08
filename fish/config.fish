@@ -11,9 +11,8 @@ alias lsa 'eza -la --color=always --group-directories-first --icons'
 # abbr config
 abbr cfgfastfetch   'vim ~/git/dotarch/fastfetch/config.jsonc'
 abbr cfgfish        'vim ~/git/dotarch/fish/config.fish'
-# abbr cfgkitty       'vim ~/git/dotarch/kitty/kitty.conf'
 abbr cfgalacritty   'vim ~/git/dotarch/alacritty/alacritty.toml'
-abbr cfgkitty       'vim ~/git/github/hypr-dotfiles/kitty/kitty.conf'
+abbr cfgkitty       'vim ~/git/dotarch/kitty/kitty.conf'
 abbr cfgvim         'vim ~/git/dotarch/vim/vimrc'
 
 abbr cfghypr        'vim ~/git/dotarch/hypr/hyprland.lua'

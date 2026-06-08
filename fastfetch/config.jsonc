@@ -1,80 +1,84 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "display": {
-        "separator": " "
-    },
     "modules": [
         "break",
         {
             "type": "host",
-            "key": "╭─󰌢",
+            "key": "╭─󰌢 ",
             "keyColor": "green"
         },
         {
             "type": "cpu",
-            "key": "├─󰻠",
+            "key": "├─ ",
             "keyColor": "green"
         },
         {
             "type": "display",
-            "key": "├─󰍹",
+            "key": "├─󰍹 ",
             "keyColor": "green"
         },
         {
-            "type": "Uptime",
-            "key": "╰─",
+            "type": "memory",
+            "key": "├─ ",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "╰─ ",
             "keyColor": "green"
         },
         "break",
-
         {
             "type": "shell",
-            "key": "╭─",
+            "key": "╭─ ",
             "keyColor": "yellow"
         },
         {
             "type": "terminal",
-            "key": "├─",
+            "key": "├─ ",
             "keyColor": "yellow"
         },
         {
             "type": "terminalfont",
-            "key": "├─",
+            "key": "├─ ",
             "keyColor": "yellow"
         },
         {
             "type": "wm",
-            "key": "╰─",
+            "key": "╰─ ",
             "keyColor": "yellow"
         },
         "break",
-
         {
             "type": "title",
-            "key": "╭─",
+            "key": "╭─ ",
             "format": "{user-name}@{host-name}",
             "keyColor": "blue"
         },
         {
-            "type": "os",
-            "key": "├─󰣇", // Just get your distro's logo off nerdfonts.com
-            "keyColor": "blue"
-        },
-        {
             "type": "kernel",
-            "key": "├─",
+            "key": "├─ ",
             "keyColor": "blue"
         },
         {
-            "type": "localip",
-            "key": "├─󰩟",
-            "compact": true,
+            "type": "os",
+            "key": "├─󰣇 ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "Uptime",
+            "key": "├─ ",
             "keyColor": "blue"
         },
         {
             "type": "wifi",
-            "key": "╰─",
+            "key": "├─ ",
             "format": "{ssid}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "localip",
+            "key": "╰─󰩠 ",
+            "compact": true,
             "keyColor": "blue"
         }
     ]
