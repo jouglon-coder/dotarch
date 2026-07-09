@@ -14,6 +14,8 @@ abbr cfgfish        'vim ~/git/dotarch/fish/config.fish'
 abbr cfgalacritty   'vim ~/git/dotarch/alacritty/alacritty.toml'
 abbr cfgkitty       'vim ~/git/dotarch/kitty/kitty.conf'
 abbr cfgvim         'vim ~/git/dotarch/vim/vimrc'
+abbr cfgmihomo      'vim ~/docker/mihomo/config/config.yaml'
+abbr mihomorestart  'cd ~/docker/mihomo && docker compose restart && cd'
 
 abbr cfghypr        'vim ~/git/dotarch/hypr/hyprland.lua'
 abbr cfghyprbind    'vim ~/git/dotarch/hypr/conf/bind.lua'

@@ -65,6 +65,7 @@
     "format-disconnected": " "
   },
   "tray": {
-    "spacing": 10
+    "spacing": 10,
+    "show-passive-items": true
   }
 }
