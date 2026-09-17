@@ -8,7 +8,7 @@ local briDown  = "XF86MonBrightnessdown"
 
 -- Main
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("alacritty"))
+hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("ghostty"))
 -- hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("wofi --show drun"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("fuzzel"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
@@ -19,11 +19,6 @@ hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
-
-hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
-hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
 
 -- Movement
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "left" }))

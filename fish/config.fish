@@ -3,8 +3,6 @@
 end
 
 # alias
-alias cleanup 'sudo pacman -Rns (pacman -Qtdq)'
-alias please sudo
 alias ls 'eza -l --color=always --group-directories-first --icons'
 alias lsa 'eza -la --color=always --group-directories-first --icons'
 
@@ -15,7 +13,6 @@ abbr cfgalacritty   'vim ~/git/dotarch/alacritty/alacritty.toml'
 abbr cfgkitty       'vim ~/git/dotarch/kitty/kitty.conf'
 abbr cfgvim         'vim ~/git/dotarch/vim/vimrc'
 abbr cfgmihomo      'vim ~/docker/mihomo/config/config.yaml'
-abbr mihomorestart  'cd ~/docker/mihomo && docker compose restart && cd'
 
 abbr cfghypr        'vim ~/git/dotarch/hypr/hyprland.lua'
 abbr cfghyprbind    'vim ~/git/dotarch/hypr/conf/bind.lua'
