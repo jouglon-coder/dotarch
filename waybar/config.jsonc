@@ -13,7 +13,6 @@
     "pulseaudio",
     "backlight",
     "battery",
-    "network",
     "tray"
   ],
   "hyprland/workspaces": {
@@ -29,40 +28,19 @@
     "tooltip-format": "{:%d.%m.%Y}"
   },
   "hyprland/language": {
-    "format": " {}",
+    "format": "{}",
     "format-en": "US",
     "format-ru": "RU"
   },
   "pulseaudio": {
-    "format": " {volume}"
+    "format": "volume {volume}"
   },
   "backlight": {
-    "format": "{icon} {percent}",
-    "format-icons": [
-      "󰃚",
-      "󰃛",
-      "󰃜",
-      "󰃝",
-      "󰃞",
-      "󰃟",
-      "󰃠"
-    ]
+    "format": "brightness {percent}"
   },
   "battery": {
-    "format": "{icon} {capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format": "battery {capacity}%",
     "interval": 60
-  },
-  "network": {
-    "format-wifi": " ",
-    "format-ethernet": "󰈀 ",
-    "format-disconnected": " "
   },
   "tray": {
     "spacing": 10,

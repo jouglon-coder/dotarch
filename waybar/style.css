@@ -35,7 +35,6 @@ window#waybar {
 #pulseaudio,
 #backlight,
 #battery,
-#network,
 #tray {
     background: rgba(250, 240, 240, 0.8);
     margin: 4px 4px 0px 4px; /*margin = внешний отступ верх-право-низ-лево*/

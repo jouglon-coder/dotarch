@@ -3,8 +3,8 @@
 end
 
 # alias
-alias ls 'eza -l --color=always --group-directories-first --icons'
-alias lsa 'eza -la --color=always --group-directories-first --icons'
+# alias ls 'eza -l --color=always --group-directories-first --icons'
+# alias lsa 'eza -la --color=always --group-directories-first --icons'
 
 # abbr config
 abbr cfgfastfetch   'vim ~/git/dotarch/fastfetch/config.jsonc'
