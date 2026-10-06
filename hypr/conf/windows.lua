@@ -3,11 +3,13 @@ hl.window_rule({
     match = {class = "org.telegram.desktop"},
     workspace = 10
 })
+
 local suppressMaximizeRule = hl.window_rule({
     name  = "suppress-maximize-events",
     match = { class = ".*" },
     suppress_event = "maximize",
 })
+
 hl.window_rule({
     name  = "fix-xwayland-drags",
     match = {
@@ -20,6 +22,7 @@ hl.window_rule({
     },
     no_focus = true,
 })
+
 hl.window_rule({
     name  = "move-hyprland-run",
     match = { class = "hyprland-run" },
