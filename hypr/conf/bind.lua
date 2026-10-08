@@ -10,7 +10,7 @@ local briDown  = "XF86MonBrightnessdown"
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("fuzzel"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('hyprshot -m region --clipboard-only -s; notify-send -i ~/Pictures/mako/shrek1.jpg "Щёлк!" "Нормальный кадр"'))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('hyprshot -m region --clipboard-only -s'))
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("ghostty"))
 
 -- Focus
@@ -43,7 +43,6 @@ hl.bind(mainMod .. " + ALT + T", hl.dsp.exec_cmd("pkill -f Telegram"))
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd("reboot"))
 hl.bind(mainMod .. " + ALT + P", hl.dsp.exec_cmd("poweroff"))
 hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd('nmcli connection up "iPhone" && notify-send -i ~/Pictures/mako/iphone.jpg "Wi-Fi" "hey apple"'))
 
 -- Volume and Brightness
 hl.bind(volRaise, hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"))

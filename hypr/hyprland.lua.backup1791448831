@@ -14,6 +14,7 @@ hl.monitor({
 })
 
 hl.on("hyprland.start", function()
+--    hl.exec_cmd("waybar & hyprpaper & udiskie")
     hl.exec_cmd("hyprpaper & udiskie")
     hl.exec_cmd("bash ~/.config/hypr/scripts/terminal-en-on-focus.sh")
 end)
