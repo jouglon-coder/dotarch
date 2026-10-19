@@ -9,6 +9,7 @@ local briDown  = "XF86MonBrightnessdown"
 -- Main
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("fuzzel"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('hyprshot -m region --clipboard-only -s'))
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("ghostty"))

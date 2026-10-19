@@ -4,17 +4,17 @@ hl.config({
         preserve_split = true,
     },
     general = {
-        gaps_in  = 8,
-        gaps_out = 16,
-        border_size = 4,
+        gaps_in  = 2,
+        gaps_out = 4,
+        border_size = 2,
         col = {
             active_border = "rgba(74a5fdff)",
             inactive_border = "rgba(676767ff)",
         },
         resize_on_border = false,
         allow_tearing = false,
-        layout = "master",
---        layout = "dwindle",
+--        layout = "master",
+        layout = "dwindle",
     },
 
     decoration = {
