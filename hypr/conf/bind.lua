@@ -1,10 +1,9 @@
 -- Variables
 local mainMod  = "SUPER"
-local menu     = "wofi --show drun"
 local volRaise = "XF86AudioRaiseVolume"
 local volLower = "XF86AudioLowerVolume"
 local briUp    = "XF86MonBrightnessUp"
-local briDown  = "XF86MonBrightnessdown"
+local briDown  = "XF86MonBrightnessDown"
 
 -- Main
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
@@ -19,7 +18,10 @@ hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
-
+hl.bind(mainMod .. " + Tab", function()
+    hl.dispatch(hl.dsp.window.cycle_next())
+    hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
+end)
 -- Movement
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
@@ -36,8 +38,10 @@ end
 -- Apps
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obsidian"))
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("Telegram"))
-hl.bind(mainMod .. " + T", hl.dsp.focus({ workspace = 10 }))
+hl.bind(mainMod .. " + T", function()
+    hl.dispatch(hl.dsp.focus({ workspace = 10 }))
+    hl.exec_cmd("Telegram")
+end)
 hl.bind(mainMod .. " + ALT + T", hl.dsp.exec_cmd("pkill -f Telegram"))
 
 -- System
@@ -46,7 +50,7 @@ hl.bind(mainMod .. " + ALT + P", hl.dsp.exec_cmd("poweroff"))
 hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Volume and Brightness
-hl.bind(volRaise, hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"))
-hl.bind(volLower, hl.dsp.exec_cmd("wpctl set-volume      @DEFAULT_AUDIO_SINK@ 5%-"))
-hl.bind(briUp, hl.dsp.exec_cmd("brightnessctl set 5%+"))
-hl.bind(briDown, hl.dsp.exec_cmd("brightnessctl set 5%-"))
+hl.bind(volRaise, hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })
+hl.bind(volLower, hl.dsp.exec_cmd("wpctl set-volume      @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true })
+hl.bind(briUp, hl.dsp.exec_cmd("brightnessctl set 5%+"), { repeating = true })
+hl.bind(briDown, hl.dsp.exec_cmd("brightnessctl set 5%-"), { repeating = true })

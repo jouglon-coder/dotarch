@@ -4,7 +4,7 @@ hl.window_rule({
     workspace = 10
 })
 
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
     name  = "suppress-maximize-events",
     match = { class = ".*" },
     suppress_event = "maximize",

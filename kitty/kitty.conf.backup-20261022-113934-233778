@@ -1,0 +1,22 @@
+include ./mocha.conf
+font_family        jetbrains mono nerd font
+font_size          12
+bold_font          auto
+italic_font        auto
+bold_italic_font   auto
+mouse_hide_wait    1.0
+cursor_shape       block
+url_style          dotted
+background_opacity 0.95
+
+# Close the terminal without confirmation
+confirm_os_window_close 0
+
+# BEGIN_KITTY_THEME
+# Duskfox
+include current-theme.conf
+# END_KITTY_THEME
+
+# Управление цветом курсора из скрипта Hyprland через локальный сокет.
+allow_remote_control socket-only
+listen_on unix:${XDG_RUNTIME_DIR}/kitty-layout
